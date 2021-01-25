@@ -1,0 +1,27 @@
+1. State differences between Python 2 and Python 3 version.
+
+i) Python 3 syntax is simple and easy to understand.
+On the other hand, Python 2 syntax is complex and comparatively difficult to understand.
+
+ii) In Python 2, print statement is used for displaying output.
+Whereas in Python 3, the print statement has been replaced with a print() function
+Ex: For displaying output,
+In Python 2 print “Python ICP1” is used but in Python 3 it is print (“Python ICP1”)
+
+iii) In Python 3, variables value does not change.
+Whereas in Python 2, global variables value will be changed while using it inside for-loop.
+
+iv) Integer division returns float values in python 3.x and integer values in 2.x
+ Ex: Python 3.x
+     print 9 / 4     Output: 2.25
+     print -9 / 4    Output: -2.25
+
+     Python 2.x
+     print 9 / 4     Output: 2
+     print -9 / 4    Output: -3
+
+v) In Python 3, Range() function is used to perform iterations whereas in Python 2, the xrange() is used to perform iterations.
+
+vi) In Python 3, default storing of strings is Unicode.
+Whereas in Python 2 to store Unicode string value, we have to define them with "u".
+
