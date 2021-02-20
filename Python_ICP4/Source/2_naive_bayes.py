@@ -3,11 +3,11 @@
 # Evaluate the model on test part
 
 # importing libraries
-from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 import pandas as pds
-from sklearn import metrics
 from sklearn.metrics import accuracy_score
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
 
 # fetching the data from glass.csv file
 train_df = pds.read_csv('glass.csv')
