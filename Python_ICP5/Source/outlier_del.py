@@ -17,10 +17,10 @@ train.SalePrice.describe()
 
 # before deleting the outlier data for GaurageArea field
 print(train[['GarageArea']])
-splt.scatter(train.GarageArea, train.SalePrice, alpha=.75, color='r')
+splt.scatter(train.GarageArea, train.SalePrice, alpha=.75, color='b')
 splt.show()
 
 # after deleting the outlier data for GaurageArea field
 filtered = train[(train.GarageArea < 1000) & (train.GarageArea > 200)]
-splt.scatter(filtered.GarageArea, filtered.SalePrice, alpha=.75, color='b')
+splt.scatter(filtered.GarageArea, filtered.SalePrice, alpha=.75, color='g')
 splt.show()
