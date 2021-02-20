@@ -31,7 +31,7 @@ print(sum(data.isnull().sum() != 0))
 ##Build a linear model
 y = np.log(data.revenue)
 X = data.drop(['revenue'], axis=1)
-# X = X[top_5]
+X = X[top_5]
 print(X)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, test_size=0.25)
