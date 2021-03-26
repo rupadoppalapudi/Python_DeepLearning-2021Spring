@@ -1,6 +1,8 @@
+# Age and Gender detection of a person based on the image by passing it to the machine learning algorithm
+
 # importing required modules
 import cv2 as cv
-import time
+# import time
 
 # extracting face of the person from image
 def extract_face(net, image, conf_threshold=0.7):
@@ -51,7 +53,7 @@ padding = 20
 # age and gender detection of the person based on the image
 def age_gender_detector(image):
     # reading image
-    t = time.time()
+    # t = time.time()
     frame_face, b_boxes = extract_face(face_network, image)
     for bbox in b_boxes:
         face = image[max(0, bbox[1] - padding):min(bbox[3] + padding, image.shape[0] - 1),
@@ -83,7 +85,7 @@ def age_gender_detector(image):
     return frame_face
 
 # displaying the output image along with age and gender indication
-input_image = cv.imread("pp.jpg")
+input_image = cv.imread("rh.PNG")
 output_image = age_gender_detector(input_image)
 cv.imshow("image", output_image)
 cv.waitKey(0)
